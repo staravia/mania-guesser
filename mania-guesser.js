@@ -1,5 +1,6 @@
 const Ranks = require("./constants").Ranks;
 const DataField = require("./constants").DataField;
+const Discord = require("discord.js");
 const EventEmitter = require('events');
 const Commands = require("./constants").Commands;
 const Invite = "https://discordapp.com/oauth2/authorize?client_id=642470359354048527&scope=bot";
@@ -187,6 +188,13 @@ module.exports = class Game {
 					this.endEncounter();
 					this.startEncounter(msg.channel);
 				}
+			return;
+			case Commands.UWU:
+				const attachment = new Discord.Attachment('./uwu.png', 'uwu.png');
+				const embed = new Discord.RichEmbed()
+			        .attachFile(attachment)
+			        .setImage('attachment://uwu.png');
+				sendMessage(msg.channel, embed);
 			return;
 			sendMessage(msg.channel, `${tag} Unknown Command. Type m!help for help!`);
 		}

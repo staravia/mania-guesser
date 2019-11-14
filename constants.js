@@ -30,7 +30,8 @@ module.exports.Commands = {
 	REMOVECHANNEL: 'removechannel',
 	SONGS: 'songs',
 	PLAY: 'play',
-	SKIP: 'skip'
+	SKIP: 'skip',
+  UWU : 'uwu'
 };
 
 module.exports.DataField = {
