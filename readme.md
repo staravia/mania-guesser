@@ -14,10 +14,6 @@ Mania Guesser is a bot where users encounter random osu!mania maps that they may
 - `m!hint`: reveals a hint for the current encounter.
 - `m!play`: starts a new song encounter.
 - `m!skip`: skips the current song encounter.
-# Trouble Shooting
-- A Play Channel must be set for this bot using the m!setchannel command.
-- Make sure this bot has the correct permissions to view/write message on the appropriate channels.
-- I know you can cheat using the mapset URL, but its just too much work to create a database for the images.
 # Setup (for server owners)
 1. Invite the bot to your discord server https://discordapp.com/oauth2/authorize?client_id=642470359354048527&scope=bot
 2. Create a `Mania Guesser` role and give it to anyone that wishes to have access to the `m!setchannel` and `m!removechannel` command.
@@ -46,4 +42,8 @@ module.exports.FirebaseConfig = {
 ```
 6. run index.js `node index.js`
 ## song-data.json
-If you plan on creating your own songdata.json file (for example, you would want to do this if you plan on creating a osu!std version of this bot), take a look at this repository: https://github.com/staravia/mg-file-grabber 
+If you plan on creating your own songdata.json file (for example, you would want to do this if you plan on creating a osu!std version of this bot), take a look at this repository: https://github.com/staravia/osumania-to-json
+# Trouble Shooting
+- A Play Channel must be set for this bot using the m!setchannel command.
+- Make sure this bot has the correct permissions to view/write message on the appropriate channels.
+- I know you can cheat using the mapset URL, but its just too much work to create a database for the images.
