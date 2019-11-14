@@ -46,4 +46,4 @@ module.exports.FirebaseConfig = {
 ```
 6. run index.js `node index.js`
 ## song-data.json
-If you plan on creating your own songdata.json file (for example, you would want to do this if you plan on creating a osu!std version of this bot), take a look at this repository: https://github.com/staravia/mg-file-grabber 
+If you plan on creating your own songdata.json file (for example, you would want to do this if you plan on creating a osu!std version of this bot), take a look at this repository: https://github.com/staravia/osumania-to-json
