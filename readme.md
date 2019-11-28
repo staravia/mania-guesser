@@ -1,5 +1,5 @@
 # What is this?
-Mania Guesser is a bot where users encounter random osu!mania maps that they may be familiar with. The player earns points by guessing a song's name correctly (similar to pokecord bot)
+Mania Guesser is a game bot where players encounter random bg images of osu!mania maps. The player earns points by guessing a song's name correctly (similar to pokecord bot)
 # Commands
 ## General Commands
 - `m!help`: displays a list of commands and troubleshooting for this bot. 
@@ -19,7 +19,7 @@ Mania Guesser is a bot where users encounter random osu!mania maps that they may
 2. Create a `Mania Guesser` role and give it to anyone that wishes to have access to the `m!setchannel` and `m!removechannel` command.
 3. Set the Play Channel `m!setchannel` (this is where you will see the bot spam.)
 # Setup (for developers)
-1. Make sure you have the latest version of npm installed. Current Version: 6.12.0.
+1. Make sure you have the latest version of npm installed on your server machine. Current Version: 6.12.0.
 2. This bot also requires you to make a real-time database from firebase (but you can modify the code to use a different type of database.) The bot should also automatically populate your database if you plan on using firebase.
 3. clone the repository to the host server `git clone http://github.com/staravia/mania-guesser`
 4. cd to the project directory and install node packages `npm install`
@@ -40,7 +40,7 @@ module.exports.FirebaseConfig = {
 	  appId: "----------", 
 };
 ```
-6. run index.js `node index.js`
+6. execute `node index.js`
 ## song-data.json
 If you plan on creating your own songdata.json file (for example, you would want to do this if you plan on creating a osu!std version of this bot), take a look at this repository: https://github.com/staravia/osumania-to-json
 # Trouble Shooting
