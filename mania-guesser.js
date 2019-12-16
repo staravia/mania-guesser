@@ -6,10 +6,10 @@ const Commands = require("./constants").Commands;
 const Invite = "https://discordapp.com/oauth2/authorize?client_id=642470359354048527&scope=bot";
 const Github = "https://github.com/staravia/mania-guesser";
 const Prefix = "m!";
-const Version = "v1.1.4"
+const Version = "v1.1.5"
 const TimeOutMax = 43200
 const CountMin = 6;
-const CountDelta =20;
+const CountDelta = 20;
 const PageSize = 20;
 const MaxHints = 2;
 

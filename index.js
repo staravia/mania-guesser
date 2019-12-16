@@ -138,6 +138,7 @@ function setPresence(){
   client.user.setPresence({
         game: {
             name: "m!help (" + client.guilds.size + " servers)"
+            //name: "Under Maintanance"
         }
     });
 }
