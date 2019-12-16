@@ -6,10 +6,10 @@ const Commands = require("./constants").Commands;
 const Invite = "https://discordapp.com/oauth2/authorize?client_id=642470359354048527&scope=bot";
 const Github = "https://github.com/staravia/mania-guesser";
 const Prefix = "m!";
-const Version = "v1.1.4"
+const Version = "v1.1.5"
 const TimeOutMax = 43200
 const CountMin = 6;
-const CountDelta =20;
+const CountDelta = 20;
 const PageSize = 20;
 const MaxHints = 2;
 
@@ -22,7 +22,6 @@ module.exports = class Game {
 		this.encounterDate = null;
 		this.currentSong = null;
 		this.totalHintsGiven = 0;
-		this.startTime = new Date();
 		this.eventSystem = new EventEmitter();
 	}
 
@@ -107,7 +106,7 @@ module.exports = class Game {
 			case Commands.INFO:
 				var output = "**Mania Guesser (Info)**\n";
 				output += `Version: ${Version}\n`;
-				output += `Run Time: ${((new Date() - this.startTime) / 3600000).toFixed(1)} hours\n`
+				output += `Run Time: ${(process.uptime()/3600).toFixed(1)} hours\n`
 				output += `Github: ${Github}\n`;
 				output += `Invite: ${Invite}\n`;
 				sendMessage(msg.channel, output);
